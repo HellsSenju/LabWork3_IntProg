@@ -1,0 +1,23 @@
+nav {
+	background-color: #faf3b7;
+
+}
+
+.navTextMain{
+    background-color: #55567b;
+    color: #ffff;
+    font-family: Arial, sans-serif;
+    font-size: 16pt;
+}
+
+.navText{
+    color: #ee8373;
+    font-family: Arial, sans-serif;
+    font-size: 16pt;
+}
+
+.nav-link:hover{
+    color: #ee8373;
+    background-color: #55567b;
+}
+

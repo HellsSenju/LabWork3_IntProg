@@ -1,0 +1,118 @@
+ body {
+    font-family: sans-serif; /* тип шрифта(сейчас без засечек) */
+}
+
+.imageBody{
+    width: 80%;
+}
+
+.history{
+    padding: 0;
+    margin-top: 30px;
+	margin-bottom: 30px;
+    width: 850px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #dbb785;
+    font:  sans-serif;
+}
+
+.history article{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: #ffff;
+
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    font: Helvetica, sans-serif;
+    font-size: 16pt;
+}
+
+.history h1{
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: #55567b;
+    font-size: 30pt;
+    font: Helvetica, sans-serif;
+}
+
+.geography{
+    margin-top: 30px;
+	margin-bottom: 30px;
+    width: 850px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #dbb785;
+}
+
+.geography h1{
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: #55567b;
+    font-size: 30pt;
+}
+
+.geography article{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: #ffff;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    font-size: 16pt;
+}
+
+.strategy{
+    margin-top: 30px;
+	margin-bottom: 30px;
+    width: 850px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #dbb785;
+}
+
+.strategy h1{
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    color: #55567b;
+    font-size: 30pt;
+}
+
+.strategy article{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: #ffff;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    font-size: 16pt;
+}
+
+.strategy p{
+    color: #55567b;
+    font-size: 18pt;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.strategy ul{
+    color: #ffff;
+    font-size: 20pt;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    font-size: 16pt;
+}
+
+/* розовый: #ee8373
+фиолетовый: #55567b
+темно коричневый: #dbb785
+светло коричневый: #faf3b7  */

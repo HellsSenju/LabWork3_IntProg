@@ -1,0 +1,28 @@
+header {
+    background-color: #ee8373;
+    height: 140px;
+}
+
+header img{
+    height: 135;
+    width: 135;
+    margin-left: 25%;
+}
+
+header h1{
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-stretch: ultra-expanded;
+    margin-left: 35%;
+    font-size: 36pt;
+}
+
+header h2{
+    color: #55567b;
+    font-family: Arial, sans-serif;
+    font-stretch: ultra-expanded;
+    margin-left: 44%;
+    font-size: 36pt;
+}
+
+
