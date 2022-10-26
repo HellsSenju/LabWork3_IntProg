@@ -1,32 +1,24 @@
  body {
-    font-family: sans-serif; /* тип шрифта(сейчас без засечек) */
+    font-family: sans-serif;
 }
 
 .imageBody{
-    width: 80%;
+    width: 70%;
 }
 
 .history{
-    padding: 0;
-    margin-top: 30px;
-	margin-bottom: 30px;
-    width: 850px;
-    margin-left: 30px;
-    margin-right: 30px;
+	width: 70%;
+	margin-top: 30px;
     background-color: #dbb785;
     font:  sans-serif;
 }
 
 .history article{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
     color: #ffff;
-
     padding-left: 25px;
     padding-right: 15px;
     padding-bottom: 30px;
-    font: Helvetica, sans-serif;
+    font: sans-serif;
     font-size: 16pt;
 }
 
@@ -36,16 +28,14 @@
     margin-bottom: 10px;
     color: #55567b;
     font-size: 30pt;
-    font: Helvetica, sans-serif;
+    font: sans-serif;
 }
 
 .geography{
-    margin-top: 30px;
-	margin-bottom: 30px;
-    width: 850px;
-    margin-left: 30px;
-    margin-right: 30px;
+    width: 70%;
+	margin-top: 30px;
     background-color: #dbb785;
+    font:  sans-serif;
 }
 
 .geography h1{
@@ -68,12 +58,10 @@
 }
 
 .strategy{
-    margin-top: 30px;
-	margin-bottom: 30px;
-    width: 850px;
-    margin-left: 30px;
-    margin-right: 30px;
+    width: 70%;
+	margin-top: 30px;
     background-color: #dbb785;
+    font:  sans-serif;
 }
 
 .strategy h1{

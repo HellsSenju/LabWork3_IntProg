@@ -1,45 +1,28 @@
-html, body {
-    padding: 0;/*  отступ внутри элемента(внутренние отступы) */
-    margin: 0; /* отступ от внешнего края элемента до другого элемента  */
-    font-family: sans-serif; /* тип шрифта(сейчас без засечек) */
-    line-height: 1.15; /* межстрочный интервал */
-    height: 100%; /* размер тегов  */
-	width: 70%; /* ширина */
-	margin-left: 15%; /* отступ слева */
+body {
+    font-family: sans-serif;
 }
 
-.directors{
-    color: aliceblue;
-    font-size: 40pt;
-    color: #55567b;
+.imageBody{
+    width: 60%;
 }
 
 .directors h1{
-    font-size: 40pt;
-    color: #55567b; 
-    margin-left: 180px;
-    margin-right: 30px;  
+	margin-top: 10px;
+    font-size: 35pt;
+    color: #55567b;
+	margin-left 	
+	
 }
 
 .directors h2{
-    font-size: 40pt;
+    font-size: 35pt;
     color: #55567b; 
-    margin-left: 310px;
-    margin-right: 30px;  
-}
-
-
-.directors img{
-    margin-top: 30px;
-	margin-bottom: 30px;
-    width: 850px;
-    margin-left: 30px;
-    margin-right: 30px; 
+	width: 13%;	
 }
 
 .ystav{
-    color: aliceblue;
     background-color: #ee8373;
+	width: 60%;
 }
 
 .ystav a{

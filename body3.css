@@ -1,39 +1,30 @@
-html, body {
-    padding: 0;/*  отступ внутри элемента(внутренние отступы) */
-    margin: 0; /* отступ от внешнего края элемента до другого элемента  */
-    font-family: sans-serif; /* тип шрифта(сейчас без засечек) */
-    line-height: 1.15; /* межстрочный интервал */
-    height: 100%; /* размер тегов  */
-	width: 70%; /* ширина */
-	margin-left: 15%; /* отступ слева */
+body {
+	font-family: sans-serif;
 }
 
 .toMeeting{
-    margin-bottom: 50PX;
-    color: #55567b;
-}
-
-.toMeeting h2{
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 22pt;
-    color: #55567b;
-    
+	height: 50px;
+    margin-bottom: 50px;
+	width: 80%;
+	background-color: #dbb785;
+	padding-top: 10px;
 }
 
 .toMeeting a{
-    margin-left: 20px;
-    margin-right: 20px;
-    display: flex;
-    background-color: #dbb785;
-    flex-direction: column;
-    color: #ffff;
-    padding-left: 25px;
-    padding-right: 15px;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    font: Helvetica, sans-serif;
+	
+	color: #ffff;
+    font: sans-serif;
     font-size: 16pt;
+}
+
+.fs-1{
+	font-size: 40pt;
+    color: #55567b;
+}
+
+.fs-2{
+	font-size: 30pt;
+    color: #55567b;
 }
 
 h1{
@@ -41,21 +32,16 @@ h1{
     margin-right: 20px;
     font-size: 30pt;
     color: #55567b;
-
 }
 
 article{
-    margin-left: 20px;
-    margin-right: 20px;
+	width: 80%;
     background-color: #ee8373;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
     color: #ffff;
     padding-left: 25px;
     padding-right: 15px;
     padding-bottom: 30px;
     padding-top: 30px;
-    font: Helvetica, sans-serif;
+    font:sans-serif;
     font-size: 16pt;
 }

@@ -1,18 +1,10 @@
-html, body {
-    padding: 0;/*  отступ внутри элемента(внутренние отступы) */
-    margin: 0; /* отступ от внешнего края элемента до другого элемента  */
-    font-family: sans-serif; /* тип шрифта(сейчас без засечек) */
-    line-height: 1.15; /* межстрочный интервал */
-    height: 100%; /* размер тегов  */
-	width: 70%; /* ширина */
-	margin-left: 15%; /* отступ слева */
+body {
+	font-family: sans-serif;
 }
 
 .bussines{
     color: #55567b;
-    width: 850px;
-    margin-left: 30px;
-    margin-right: 30px;
+    width: 80%;
 }
 
 .bussines h1{
@@ -20,28 +12,33 @@ html, body {
     color: #55567b;
 }
 
-.bussines ol{
-    font-size: 30pt;
-    color: #55567b; 
+.list-group{
+	color: #fffff;
 }
 
-.bussines a{
-    font-size: 30pt;
-    color: #55567b;
-    text-decoration: none; 
+.list-group-item{
+	font-size: 30pt;
+	color: #55567b;
 }
+
+.list-group-item a{
+	text-decoration: none;
+	color: #55567b;
+}
+
+
 
 .about{
     color: #55567b;
-    width: 850px;
+    width: 80%;
     margin-left: 30px;
     margin-right: 30px;
     background-color: #ee8373;
 }
 
 .about h2{
-    font-size: 26pt;
-    color: #fff;
+    font-size: 32pt;
+    color: #55567b;
     padding-top: 20px;
     padding-left: 20px;
 }

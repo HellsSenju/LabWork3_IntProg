@@ -11,7 +11,7 @@ header img{
 
 header h1{
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     font-stretch: ultra-expanded;
     margin-left: 35%;
     font-size: 36pt;
@@ -19,9 +19,9 @@ header h1{
 
 header h2{
     color: #55567b;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     font-stretch: ultra-expanded;
-    margin-left: 44%;
+    margin-left: 43%;
     font-size: 36pt;
 }
 
