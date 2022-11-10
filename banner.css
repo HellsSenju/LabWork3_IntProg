@@ -1,0 +1,26 @@
+#banner {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 700px;
+}
+
+#banner img {
+    border-radius: 5px;
+}
+
+#banner img.show {
+    height: 700px;
+    width: 95%;
+    opacity: 1;
+    transition: opacity 1s, visibility 0s;
+}
+
+#banner img.hide {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 0s 1s;
+}
