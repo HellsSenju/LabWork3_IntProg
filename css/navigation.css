@@ -1,0 +1,55 @@
+nav {
+	background-color: #faf3b7;
+}
+
+.dropdown{
+    display: none;
+}
+
+.navTextMain{
+    background-color: #55567b;
+    color: #ffff;
+    font-family: sans-serif;
+    font-size: 16pt;
+}
+
+.navText{
+    color: #ee8373;
+    font-family: sans-serif;
+    font-size: 16pt;
+}
+
+.nav-link:hover{
+    color: #ee8373;
+    background-color: #55567b;
+}
+
+@media screen and (max-width: 1100px) { 
+
+    .dropdown{
+        background-color: #55567b;
+        display:block;       
+    }
+
+    .dropdown-menu{
+        background-color: #faf3b7;
+        width: 100vw;
+    }
+
+    .dropdown .btn{
+        font-size: 30pt;
+    }
+    
+    .dropdown-item{
+        font-size: 30pt;
+    }
+    
+    .dropdown-item:hover{
+        color: #ee8373;
+        background-color: #55567b;
+    }
+
+    .nav-pills {
+        display: none; 
+    }
+}

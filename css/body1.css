@@ -1,14 +1,18 @@
- body {
+body {
     font-family: sans-serif;
 }
 
 .imageBody{
     width: 70%;
+    margin-left: 228px;
+    margin-right: 228px;
 }
 
 .history{
 	width: 70%;
 	margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #dbb785;
     font:  sans-serif;
 }
@@ -32,6 +36,8 @@
 }
 
 .geography{
+    margin-left: auto;
+    margin-right: auto;
     width: 70%;
 	margin-top: 30px;
     background-color: #dbb785;
@@ -58,6 +64,8 @@
 }
 
 .strategy{
+    margin-left: auto;
+    margin-right: auto;
     width: 70%;
 	margin-top: 30px;
     background-color: #dbb785;
@@ -99,6 +107,26 @@
     padding-bottom: 30px;
     font-size: 16pt;
 }
+
+@media screen and (max-width: 1100px) {
+    .imageBody{
+    width: 100vw;
+    margin: 0;
+    }
+    
+    .history{
+    width: 100vw;
+    }
+    
+    .geography{
+    width: 100vw;
+    }
+    
+    .strategy{
+    width: 100vw;
+    }
+}
+
 
 /* розовый: #ee8373
 фиолетовый: #55567b

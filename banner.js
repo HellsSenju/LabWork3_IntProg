@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.info('Loaded');
 
-    const banners = document.querySelectorAll("#banner png");
+    const banners = document.querySelectorAll("#banner img");
 
     var old = banners.length - 1;
     var current = 0;

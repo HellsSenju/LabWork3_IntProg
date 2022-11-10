@@ -1,6 +1,7 @@
 header {
     background-color: #ee8373;
     height: 140px;
+    width: 100vw;
 }
 
 header img{
@@ -24,5 +25,3 @@ header h2{
     margin-left: 43%;
     font-size: 36pt;
 }
-
-

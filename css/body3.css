@@ -45,3 +45,18 @@ article{
     font:sans-serif;
     font-size: 16pt;
 }
+
+@media screen and (max-width: 1100px) {
+    .toMeeting{
+    width: 100vw;
+    }
+
+    article{
+        width: 100vw;
+        }
+    
+    .ystav{
+    width: 100vw;
+    }
+
+}
