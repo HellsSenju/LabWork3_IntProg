@@ -1,0 +1,11 @@
+{{#each items}}
+    <tr id="item-{{@key}}">
+        <th scope="row">{{inc @index}}</th>
+        <td>{{this.name}}</td>
+        <td>{{this.price}}</td>
+        <td>{{this.count}}</td>
+        <td>{{this.sum}}</td>
+        <td><a href=# onclick="removeItemFromTable({{@key}})">
+                <i class="fa-solid fa-trash"></i></a></td>
+    </tr>
+{{/each}}
