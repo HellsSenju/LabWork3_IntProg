@@ -1,0 +1,65 @@
+extends template/main.pug
+
+block styles
+    link(rel="stylesheet" href="../css/body6.css")
+
+block variables 
+    - currentPage = "js1.html"
+
+block content
+    hr(size='8' align='center')
+    h1(align='center') Добавьте данные пользователей
+    hr(size='8' align='center')
+
+    div(class="p-2")
+        form(class="row g-3 needs-validation" novalidate)
+            div(class="col-md-4")
+                label(for="validationCustom01" class="form-label") Имя
+                input(id="validationCustom01" type="text" class="form-control" value="Mark" required)
+                div(class="valid-feedback") Отлично!
+                div(class="invalid-feedback") Пожалуйста, введите имя
+            div(class="col-md-4")
+                label(for="validationCustom02" class="form-label") Фамилия
+                input(id="validationCustom02" type="text" class="form-control" value="Otto" required)
+                div(class="valid-feedback") Отлично!
+                div(class="invalid-feedback") Пожалуйста, введите фамилию
+            div(class="col-md-4")
+                label(for="validationCustomUsername" class="form-label") Имя пользователя
+                div(class="input-group has-validation")
+                    span(id="inputGroupPrepend" class="input-group-text") @
+                    input(
+                        id="validationCustomUsername"
+                        type="text" 
+                        class="form-control" 
+                        aria-describedby="inputGroupPrepend" 
+                        required
+                    )
+                    div(class="valid-feedback") Отлично!
+                    div(class="invalid-feedback") Пожалуйста, выберите имя пользователя
+            div(class="col-md-6")
+                label(for="validationCustom03" class="form-label") Город
+                input(id="validationCustom03" type="text" class="form-control" required)
+                div(class="valid-feedback") Отлично!
+                div(class="invalid-feedback") Пожалуйста, введите город корректно
+            div(class="col-md-3")
+                label(for="validationCustom04" class="form-label") Область
+                select(id="validationCustom04" class="form-select" required)
+                    option(selected disabled value="") Выберите...
+                    option Ульяновская обл
+                    option Московская обл
+                    option Нижегородская обл
+                    option Ленинградская обл
+                    option Ростовская обл
+                div(class="valid-feedback") Отлично!
+                div(class="invalid-feedback") Пожалуйста, выберите область корректно
+            div(class="col-12")
+                div(class="form-check")
+                    input(id="invalidCheck" class="form-check-input" type="checkbox" value="" required)
+                    label(class="form-check-label" for="invalidCheck") Согласие с правилами и условиями
+                    div(class="valid-feedback") Отлично!
+                    div(class="invalid-feedback") Перед отправкой согласитесь с правилами и условиями
+            div(class="col-12")
+                button(class="btn btn-primary" type="submit") Отправить форму
+block body-scripts
+    script
+        include ../js/js1.js

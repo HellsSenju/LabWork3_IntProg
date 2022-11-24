@@ -1,0 +1,45 @@
+extends template/main.pug
+
+block styles
+    link(rel="stylesheet" href="../css/body6.css")
+
+block variables 
+    - currentPage = "js2.html"
+
+block content
+    hr(size='8' align='center')
+    h1(align='center') Фирменные товары для заказа
+    hr(size='8' align='center')
+
+    div(class="p-2")
+        table(id="tbl-items" class="table")
+            thead
+                tr
+                    th(scope="col") №
+                    th(scope="col") Товар
+                    th(scope="col") Цена
+                    th(scope="col") Количество
+                    th(scope="col") Сумма
+                    th(scope="col")
+            tbody
+        form(id="frm-items" class="row g-3")
+            div(class="col-md-4")
+                label(for="item" class="form-label") Товары
+                select(id="item" class="form-select" required)
+                    option(selected disabled value="") Укажите товар...
+                    option Футболка
+                    option Кружка
+                    option Ручка
+                    option Блокнот
+                    option Значки
+                    option Наклейки
+            div(class="col-md-4")
+                label(for="price" class="form-label") Цена
+                input(id="price" type="number" class="form-control" value="0.00" step="0.01" min="0" required)
+            div(class="col-md-4")
+                label(for="count" class="form-label") Количество
+                input(id="count" type="number" class="form-control" value="0" min="0" required)
+            div(class="col-12")
+                button(id="btn-add-item" class="btn btn-primary" type="submit") Добавить
+block body-scripts
+    script(src="../js/items.js")  
