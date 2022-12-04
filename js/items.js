@@ -30,7 +30,7 @@ function loadItemsTable() {
             throw 'Table is not found';
         }
 
-        fetch("handlebars/items-table.html")
+        fetch("../handlebars/items-table.html")
             .then(function (response) {
                 return response.text();
             })
