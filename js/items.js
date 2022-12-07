@@ -4,7 +4,7 @@ Handlebars.registerHelper("inc", function (value, options) {
     return parseInt(value) + 1;
 });
 
-const items = new Map();
+const items = new Map(); //словарь
 
 class ItemLine {
     constructor(name, price, count, sum) {
@@ -30,7 +30,7 @@ function loadItemsTable() {
             throw 'Table is not found';
         }
 
-        fetch("../handlebars/items-table.html")
+        fetch("handlebars/items-table.html")
             .then(function (response) {
                 return response.text();
             })
@@ -40,10 +40,11 @@ function loadItemsTable() {
                 console.info('Drawn');
             })
             .catch(function (error) {
-                console.error('Error:', error);
+                console.info('ERROR IN: fetch("handlebars/items-table.html")');
                 throw "Can't render template";
             });
     }
+
 
     fetch("http://localhost:8079/lines")
         .then(function (response) {
@@ -59,7 +60,7 @@ function loadItemsTable() {
             drawItemsTable();
         })
         .catch(function (error) {
-            console.error('Error:', error);
+            console.error(error);
             throw "Can't load items";
         });
 }
@@ -119,6 +120,56 @@ function removeItemFromTable(id) {
             throw "Can't add item";
         });
 }
+
+function renameItem(id) {
+    console.info('Try to edit item');
+    
+    if (!confirm('Do you really want to edit this item?')) {
+        console.info('Canceled');
+        return;
+    }
+    
+    if (!items.has(id)) {
+        throw 'Item with id [' + id + '] is not found';
+    }
+
+    const item = document.querySelector("#item");
+    if (item == null) {
+        throw 'Item control is not found';
+    }
+    
+    const price = document.querySelector("#price");
+    if (price == null) {
+        throw 'Price control is not found';
+    }
+    
+    const count = document.querySelector("#count");
+    if (count == null) {
+        throw 'Count control is not found';
+    }
+    
+    const itemObject = new ItemLine(item.value, parseFloat(price.value), parseInt(count.value), parseFloat(price.value*count.value));
+    
+    fetch("http://localhost:8079/lines/" + id,
+        {
+            method: 'PUT',
+            body: JSON.stringify(itemObject),
+            headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+            }
+        })
+        .then(function () {
+            console.info('Edited');
+            
+            loadItemsTable();
+        })
+        .catch(function (error) {
+            console.error('Error:', error);
+            throw "Can't add item";
+        });
+}
+
 
 function loadItemsSelect(select) {
     function drawItemsSelect(select, data) {

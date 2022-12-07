@@ -6,6 +6,9 @@
         <td>{{this.count}}</td>
         <td>{{this.sum}}</td>
         <td><a href=# onclick="removeItemFromTable({{@key}})">
-                <i class="fa-solid fa-trash"></i></a></td>
+            <i class="fa-solid fa-trash"></i></a></td>
+
+        <td><a href=# onclick="renameItem({{@key}})">
+            <i class="fas fa-pencil-alt"></i></a></td>
     </tr>
 {{/each}}
