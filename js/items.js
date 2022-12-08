@@ -121,13 +121,8 @@ function removeItemFromTable(id) {
         });
 }
 
-function renameItem(id) {
+function updating(id) {
     console.info('Try to edit item');
-    
-    if (!confirm('Do you really want to edit this item?')) {
-        console.info('Canceled');
-        return;
-    }
     
     if (!items.has(id)) {
         throw 'Item with id [' + id + '] is not found';
@@ -168,6 +163,68 @@ function renameItem(id) {
             console.error('Error:', error);
             throw "Can't add item";
         });
+}
+
+
+function renameItem(id) {
+    if (!confirm("Do you really want to edit this item?")) {
+        return console.info("Canceled");
+      }
+    
+      if (!items.has(id)) {
+        throw "Item with id [" + id + "] is not found";
+      }
+      const item = document.querySelector("#item");
+      if (item == null) {
+          throw 'Item control is not found';
+      }
+  
+      const price = document.querySelector("#price");
+      if (price == null) {
+          throw 'Price control is not found';
+      }
+  
+      const count = document.querySelector("#count");
+      if (count == null) {
+          throw 'Count control is not found';
+      }
+      let itemObject;
+      const eventEdit = (callback, event) => {
+        event.preventDefault();
+        const itemObject = new ItemLine(item.value, parseFloat(price.value), parseInt(count.value), parseFloat(price.value*count.value));
+        callback();
+      }
+
+      
+    
+      new Promise((resolve, reject) => {
+        const object = items.get(id);
+        item.value = object.name;
+        price.value = object.price;
+        count.value = object.count;
+        document.getElementById("btn-add-item")?.addEventListener('click', e => eventEdit(resolve, e));
+      }).then(() => {
+        console.log(1)
+        document.getElementById("btn-add-item")?.removeEventListener('click', e => eventEdit());
+        fetch("http://localhost:8079/lines/${id}",
+            {
+              method: "PUT",
+              body: JSON.stringify(itemObject),
+              headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+              }})
+            .then(() => {
+              console.info("Edited");
+              loadItemsTable();
+            })
+            .catch(error => {
+              console.error("Error:", error);
+              throw "Can't add item";
+            });
+      })
+
+      
 }
 
 
